@@ -23,6 +23,7 @@ allprojects {
         jcenter()
         flatDir {
             dirs 'src/main/libs'
+            dirs 'libs'
         }
         maven { url 'https://jitpack.io' }
         maven {

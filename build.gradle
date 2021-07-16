@@ -7,10 +7,10 @@ project.ext.POM_ARTIFACT_ID = config.publish.artifactId
 
 buildscript {
     repositories {
-        mavenLocal()
+//        mavenLocal()
         google()
         mavenCentral()
-        jcenter()
+//        jcenter()
         maven {
             url 'https://jitpack.io'
         }
@@ -20,7 +20,7 @@ buildscript {
     }
     dependencies {
         //noinspection GradlePluginVersion
-        classpath "com.android.tools.build:gradle:_"
+        classpath 'com.android.tools.build:gradle:4.2.0+'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:_"
         classpath "org.jetbrains.kotlin:kotlin-allopen:_"
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:_"
@@ -48,7 +48,7 @@ apply plugin: 'com.vanniktech.maven.publish'
 repositories {
     google()
     mavenCentral()
-    jcenter()
+//    jcenter()
     maven { url 'https://jitpack.io' }
 }
 
@@ -57,7 +57,7 @@ android {
 
     useLibrary 'android.test.runner'
 
-    ndkVersion "21.1.6352462"
+    ndkVersion "22.1.7171670"
 
     defaultConfig {
         minSdkVersion config.minSdkVersion

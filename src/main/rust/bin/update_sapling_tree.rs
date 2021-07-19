@@ -11,9 +11,9 @@ use zcash_client_backend::proto::compact_formats;
 use zcash_primitives::{merkle_tree::CommitmentTree, sapling::Node};
 
 #[cfg(feature = "mainnet")]
-const START_HEIGHT: u64 = 419200;
+const START_HEIGHT: u64 = 152855;
 #[cfg(feature = "mainnet")]
-const LIGHTWALLETD_HOST: &str = "mainnet.lightwalletd.com";
+const LIGHTWALLETD_HOST: &str = "lightd.meshbits.io";
 #[cfg(feature = "mainnet")]
 const NETWORK: &str = "mainnet";
 

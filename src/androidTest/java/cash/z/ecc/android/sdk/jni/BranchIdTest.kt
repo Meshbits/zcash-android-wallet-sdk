@@ -47,7 +47,7 @@ class BranchIdTest(
             val mainnetBackend = RustBackend.init("", "", "", ZcashNetwork.Mainnet)
             return listOf(
                 // Mainnet Cases
-                arrayOf("Sapling", 419_200, 1991772603L, "76b809bb", mainnetBackend),
+                arrayOf("Sapling", 152_855, 1991772603L, "76b809bb", mainnetBackend),
                 arrayOf("Blossom", 653_600, 733220448L, "2bb40e60", mainnetBackend),
                 arrayOf("Heartwood", 903_000, 4122551051L, "f5b9230b", mainnetBackend),
                 arrayOf("Canopy", 1_046_400, 3925833126L, "e9ff75a6", mainnetBackend),

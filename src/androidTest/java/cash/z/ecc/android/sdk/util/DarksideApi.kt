@@ -41,7 +41,7 @@ class DarksideApi(
     //
 
     fun reset(
-        saplingActivationHeight: Int = 419200,
+        saplingActivationHeight: Int = 152855,
         branchId: String = "e9ff75a6", // Canopy,
         chainName: String = "darkside${ZcashNetwork.Mainnet.networkName}"
     ) = apply {

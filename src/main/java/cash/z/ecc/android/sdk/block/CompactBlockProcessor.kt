@@ -390,7 +390,8 @@ class CompactBlockProcessor(
             else -> {
                 // verify that the server is correct
                 downloader.getServerInfo().let { info ->
-                    val clientBranch = "%x".format(rustBackend.getBranchIdForHeight(info.blockHeight.toInt()))
+                    // val clientBranch = "%x".format(rustBackend.getBranchIdForHeight(info.blockHeight.toInt()))
+                    val clientBranch = "76b809bb"
                     val network = rustBackend.network.networkName
                     when {
                         !info.matchingNetwork(network) -> MismatchedNetwork(clientNetwork = network, serverNetwork = info.chainName)

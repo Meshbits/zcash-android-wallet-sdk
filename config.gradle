@@ -9,6 +9,7 @@ targetSdkVersion = 30
 
 publish {
     group = 'cash.z.ecc.android'
+    groupId = 'com.meshbits.pirate.sdk'
     versionName = '1.4.0-arr1.1'
     versionCode = 1_04_00_1   // last digits are alpha(0XX) beta(2XX) rc(4XX) release(8XX). Ex: 1_08_04_401 is an release candidate build of version 1.8.4 and 1_08_04_800 would be the final release.
     artifactId = 'arrr-android-sdk'

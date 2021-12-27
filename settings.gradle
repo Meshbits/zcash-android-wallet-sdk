@@ -7,3 +7,4 @@ plugins {
 }
 
 rootProject.name = 'zcash-android-sdk'
+include ':library'

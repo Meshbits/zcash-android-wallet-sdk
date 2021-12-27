@@ -34,6 +34,7 @@ buildscript {
 apply from: 'custom-tasks.gradle'
 apply from: "$rootDir/ktlint.gradle"
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-allopen'

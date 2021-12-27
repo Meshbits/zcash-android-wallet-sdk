@@ -27,7 +27,7 @@ buildscript {
         classpath "com.google.protobuf:protobuf-gradle-plugin:_"
         classpath 'com.github.str4d:rust-android-gradle:68b4ecc053'
         classpath 'org.owasp:dependency-check-gradle:_'
-        classpath 'com.vanniktech:gradle-maven-publish-plugin:_'
+        classpath 'digital.wup:android-maven-publish:3.6.2'
     }
 }
 
@@ -41,7 +41,7 @@ apply plugin: 'org.jetbrains.dokka'
 apply plugin: 'com.google.protobuf'
 apply plugin: 'org.mozilla.rust-android-gradle.rust-android'
 apply plugin: 'org.owasp.dependencycheck'
-apply plugin: 'com.vanniktech.maven.publish'
+apply plugin: 'digital.wup.android-maven-publish'
 //apply from: 'ci.gradle'
 
 
@@ -127,9 +127,9 @@ android {
         exclude 'META-INF/LICENSE-notice.md'
     }
 }
-mavenPublish {
-    androidVariantToPublish = config.publish.target
-}
+//mavenPublish {
+//    androidVariantToPublish = config.publish.target
+//}
 
 allOpen {
     // marker for classes that we want to be able to extend in debug builds for testing purposes

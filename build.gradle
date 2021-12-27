@@ -20,7 +20,7 @@ buildscript {
     }
     dependencies {
         //noinspection GradlePluginVersion
-        classpath "com.android.tools.build:gradle:_"
+        classpath 'com.android.tools.build:gradle:4.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:_"
         classpath "org.jetbrains.kotlin:kotlin-allopen:_"
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:_"
@@ -101,8 +101,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     // ExperimentalCoroutinesApi and FlowPreview help to clear the build warnings
